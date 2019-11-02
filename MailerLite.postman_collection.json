@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "72f5ab82-ba35-4447-a10e-d18c34be4bc7",
+		"name": "MailerLite",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Subscriber",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BearerToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{Domain}}/subscriber/1",
+					"host": [
+						"{{Domain}}"
+					],
+					"path": [
+						"subscriber",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Subscribe",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BearerToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{Domain}}/subscriber/Tom",
+					"host": [
+						"{{Domain}}"
+					],
+					"path": [
+						"subscriber",
+						"Tom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Subscribers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BearerToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{Domain}}/subscriber",
+					"host": [
+						"{{Domain}}"
+					],
+					"path": [
+						"subscriber"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Subscriber",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BearerToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n\t\"email\": \"pthao14@alumni.uwosh.edu\",\n\t\"name\": \"Phia Thao\",\n\t\"fields\": [\n\t\t\t\t{\"title\": \"Address\", \"type\": \"string\", \"value\": \"123 Fun St\"}, \n\t\t\t\t{\"title\": \"City\", \"type\": \"string\", \"value\": \"Appleton\"},\n\t\t\t\t{\"title\": \"Country\", \"type\": \"string\", \"value\": \"US\"}\n\t\t\t]\n}"
+				},
+				"url": {
+					"raw": "{{Domain}}/subscriber",
+					"host": [
+						"{{Domain}}"
+					],
+					"path": [
+						"subscriber"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Subscriber",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BearerToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "lname",
+						"value": "Thao",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 1,\n\t\"state\": \"unconfirmed\",\n\t\"email\": \"pthao08@alumni.uwosh.edu\",\n\t\"name\": \"Phia Thao\",\n\t\"fields\": [\n\t\t\t\t{\"id\": 1, \"subscriber_id\": 1, \"title\": \"Phone\", \"type\": \"string\", \"value\": \"920.123.1234\"}, \n\t\t\t\t{\"id\": 3, \"subscriber_id\": 1,\"title\": \"Facebook\", \"type\": \"string\", \"value\": \"fb.com/phiathao\"} \n\t\t\t]\n}"
+				},
+				"url": {
+					"raw": "{{Domain}}/subscriber/1?",
+					"host": [
+						"{{Domain}}"
+					],
+					"path": [
+						"subscriber",
+						"1"
+					],
+					"query": [
+						{
+							"key": "fname",
+							"value": "Phia",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Subscriber",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BearerToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{Domain}}/subscriber/12",
+					"host": [
+						"{{Domain}}"
+					],
+					"path": [
+						"subscriber",
+						"12"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

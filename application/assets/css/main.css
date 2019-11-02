@@ -1,0 +1,124 @@
+body{ 
+    padding:0; 
+    margin:0; 
+    height: 100%;  
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+#header_wrapper{
+    background-color: #21C16C;
+    color: white; 
+    padding: 10px;
+}
+    #header_content, #banner_wrapper, #body_content, #footer_content{
+        position: relative;
+        max-width: 1200px;
+        margin:auto; 
+        overflow: hidden;
+    } 
+        #logo{
+            width: 100px;
+        }
+        #header_title{ display:inline-block; font-size: 45px; position: absolute; bottom:5px;} 
+        #search{
+            float: right;
+            margin-top: 25px;
+        }
+            #search input[type=text], #search button{
+                width: 300px;
+                font-size: 14px; 
+                border: 0;
+                padding: 10px;
+            }
+            #search button{ 
+                width: auto;
+                font-weight: bold; 
+                background-color: white;
+                color: black; 
+                border-left: 1px solid rgb(235, 235, 235);
+                cursor: pointer;
+            }
+            #search button:hover{
+                background-color: rgb(247, 247, 247);
+            }
+#banner{
+    background: url(../images/banner.jpg) center;
+    height: 400px;
+} 
+    #subscribe_form{
+        float:right;
+        margin: 30px;
+        width: 300px; 
+    }
+        #subscribe_form input[type=text], #subscribe_form button{
+            display:block;
+            margin-bottom: 7px;
+            width: 100%;
+            font-size: 14px; 
+            border: 0;
+            padding: 10px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -box-sizing: border-box;
+        }
+            #subscribe_form button{ 
+                cursor: pointer;
+                font-weight: bold;;
+            }
+            #subscribe_form button:hover{
+                background-color: #21C16C;
+            }
+#body_content{ padding: 15px; }
+.result_table{ border: 1px solid #283E52; margin-top: 30px; border-collapse: collapse;}      
+    .result_table th, .result_table td{
+        padding: 10px 20px 10px 20px; 
+        border:1px solid white;
+        background-color: #21C16C;
+        color: white;
+    }
+    .result_table th{
+        background-color: rgb(26, 160, 89);
+        text-transform: capitalize;
+    }
+
+
+#footer{
+    background-color:#283E52;
+    color:white;
+    padding: 40px;
+    margin-top: 60px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -box-sizing: border-box;
+}
+    #footer_content{text-align:center;}
+    
+@media(max-width: 800px){
+    #search input[type=text] {
+        width: 200px; 
+    }
+}
+@media(max-width: 700px){
+    #logo{float: left;}
+    #header_title {
+        float: left;
+        position: relative;
+        bottom: auto;
+        margin-top: 20px;
+        font-size: 35px;
+    }
+    #search{
+        float: none; 
+        clear:both;
+    }
+}
+@media(max-width: 400px){ 
+    #header_title { 
+        margin-top: 0px;
+        font-size: 45px;
+    }
+    #search input[type=text] {
+        width: 250px; 
+    }
+}

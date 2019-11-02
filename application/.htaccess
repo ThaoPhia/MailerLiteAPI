@@ -1,0 +1,4 @@
+#Remove extension + capture url string as val 
+RewriteEngine On 
+RewriteCond %{REQUEST_FILENAME} !-f  
+RewriteRule ^([a-zA-Z0-9]+)/?([a-zA-Z0-9]+)?$ $1.php?val=$2  
