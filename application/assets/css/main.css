@@ -67,6 +67,7 @@ body{
             }
             #subscribe_form button:hover{
                 background-color: #21C16C;
+                color: white;
             }
 #body_content{ padding: 15px; }
 .result_table{ border: 1px solid #283E52; margin-top: 30px; border-collapse: collapse;}      

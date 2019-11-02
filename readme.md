@@ -2,7 +2,7 @@
 This application requires LAMP. So I assume you already have something setup on your local computer.  
 
 * Download or pull this repository.
-* Create a new databae call "mailerite"
+* Create a new database call "mailerite"
 * Open file "mailerlite.sql", then copy/paste the query statements to create the tables.
 * Open file "bootstrap.php", then change the database username & password accordingly.
 * The application folder is where you need to point your config. Another option is to open a terminal and type the following code... This assume you have cd to project folder.
