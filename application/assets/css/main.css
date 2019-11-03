@@ -81,7 +81,15 @@ body{
         background-color: rgb(26, 160, 89);
         text-transform: capitalize;
     }
-
+    /* .result_table td:last-child:after{ 
+        content: 'X';
+        padding-left: 10px; 
+        position: relative; 
+        right: -10px;
+        font-size: 15px;
+        line-height: 5px;
+        font-weight: bold;
+    } */
 
 #footer{
     background-color:#283E52;

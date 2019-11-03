@@ -63,7 +63,7 @@ require_once("../bootstrap.php");
         </div>
         <div id="footer">
             <div id="footer_content">
-                Subscriber API &nbsp&nbsp | &nbsp&nbsp PhiaThao@2019
+                PhiaThao@2019 &nbsp&nbsp | &nbsp&nbsp Subscriber API
             </div>
         </div>
     </div>

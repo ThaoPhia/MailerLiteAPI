@@ -10,7 +10,7 @@ Vue.component('table-list', {
         '</thead> ' +
         '<tbody> <tr v-for="row in rows"> <!-- Loop through row --> ' +
         '<td v-for="key in columns">     <!-- Loop through column --> ' +
-        '{{ row[key] }}' +
+        '{{ row[key] | capitalize}}' +
         '</td>' +
         '</tr> </tbody> ' +
         '</table>',
@@ -18,7 +18,12 @@ Vue.component('table-list', {
         displaylabel: { type: Boolean, default: true },
         rows: Array,
         columns: Array
-    }
+    }, 
+    filters: {
+        capitalize: function (str) {
+            return str.charAt(0).toUpperCase() + str.slice(1)
+        }, 
+    },
 })
 
 //Instance 
@@ -59,6 +64,9 @@ var app = new Vue({ //Root Vue Instance
                     //console.log(error);
                     this.message = error;
                 });
-        }
+        }, 
     },
+    filters: {
+
+    }
 });
