@@ -18,8 +18,5 @@ the location of these sensitive info should not be a problem. To save you time, 
 
 * MailerLite.postman_collection.json
 * MailerLite.postman_environment.json
-
-## Test ## 
-
-
+ 
  
