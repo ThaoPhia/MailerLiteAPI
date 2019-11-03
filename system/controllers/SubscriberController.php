@@ -81,7 +81,7 @@ class SubscriberController{
             $response["status"] = "HTTP/1.1 201 Created";
             $response["body"] = "Successful";
         }else if(!empty($errors)){
-            $response["body"] = "Invalid data! <br/>".implode("<br/>", $errors);
+            $response["body"] = implode("<br/>", $errors);
         }else {
             $response['status'] = 'Failed to create';
         } 
@@ -100,7 +100,7 @@ class SubscriberController{
         if ($this->SubscriberModel->validate($data, $errors) &&  $this->SubscriberModel->update($data)) { 
             $response["body"] = "Successful";
         } else if (!empty($errors)) {
-            $response["body"] = "Invalid data! <br/>" . implode("<br/>", $errors);
+            $response["body"] = implode("<br/>", $errors);
         } else {
             $response['status'] = 'Failed to update';
         }

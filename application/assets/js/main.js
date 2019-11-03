@@ -50,10 +50,7 @@ var app = new Vue({ //Root Vue Instance
                 });
         },
         addSubscriber: function(){
-            this.message = "Processing...";
-            const params = new URLSearchParams(); 
-            params.append('name', this.name);
-            params.append('email', this.email);
+            this.message = "Processing..."; 
             axios.post('/subscriber', { name: this.name, email: this.email, headers: { "Authorization": `Bearer ` + TOKEN } })
                 .then(response => {   
                     this.message = response.data;

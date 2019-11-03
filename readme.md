@@ -9,14 +9,17 @@ This application requires LAMP. So I assume you already have something setup on 
 
 ``` php -S 127.0.0.1:8000 -t application ``` 
 
-## Client Page
-The client page is the home page. You should be able to add subscriber and do a simple search.
+## UI Page
+The UI page is the home page. You should be able to add subscriber and do a simple search.
 
 ## Postman
 You should be able to use Postman to test this api. The authorization token is in bootsrap.php. Of course, this is not a real life project, so 
-the location of these sensitive info should not be a problem. To save you time, I have included two files below.
+the location of these sensitive info should not be a problem. To save you time, I have included two files below. You will need to change the environment var "Domain" accordingly.
 
 * MailerLite.postman_collection.json
 * MailerLite.postman_environment.json
+
+## Test ## 
+
 
  
